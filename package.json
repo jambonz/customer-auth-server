@@ -1,6 +1,6 @@
 {
   "name": "customer-auth-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "example expressjs http server for authentication sip requests in jambonz",
   "main": "app.js",
   "scripts": {
