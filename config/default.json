@@ -18,6 +18,12 @@
         "username": "jane",
         "password": "5678"
       }
+    ],
+    "sip.example.com": [
+      {
+        "username": "todd",
+        "password": "1234"
+      }
     ]
   }
 }
