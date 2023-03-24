@@ -1,6 +1,6 @@
 # customer-auth-server
 
-simple expressjs app illustrating how to create a customer-side http server to authenticate calls and registration attempts on the jambonz platform.
+Simple expressjs app illustrating how to create a customer-side http server to authenticate calls and registration attempts on the jambonz platform.
 
 #### Configuring
 This application uses the [config](https://www.npmjs.com/package/config) package for managing configuration.  A sample configuration file is shown below.  In this simple example, a list of sip credentials is maintained in the configuration file that are used for authenticating requests.  The configuration also specifies the port to listen on for incoming requests and whether to use HTTP Basic Authentication to protect the endpoint.
@@ -19,11 +19,21 @@ This application uses the [config](https://www.npmjs.com/package/config) package
     "jambonz.org": [
       {
         "username": "john",
-        "password": "1234"
+        "password": "1234",
+        "expires": 300,
+        "call_hook": "http://127.0.0.1/call",
+        "call_status_hook": "http://127.0.0.1/call-status"
       },
       {
         "username": "jane",
-        "password": "5678"
+        "password": "5678",
+        "expires": 45
+      }
+    ],
+    "sip.example.com": [
+      {
+        "username": "todd",
+        "password": "1234"
       }
     ]
   }
