@@ -1,29 +1,8 @@
 {
   "server": {
     "port": 4000,
-    "path": "/auth",
-    "auth": {
-      "users": {
-        "foo": "bar"
-      }
-    }
+    "path": "/auth"
   },
   "credentials": {
-    "jambonz.org": [
-      {
-        "username": "john",
-        "password": "1234"
-      },
-      {
-        "username": "jane",
-        "password": "5678"
-      }
-    ],
-    "sip.example.com": [
-      {
-        "username": "todd",
-        "password": "1234"
-      }
-    ]
   }
 }

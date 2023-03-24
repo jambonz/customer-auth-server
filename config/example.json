@@ -1,0 +1,33 @@
+{
+  "server": {
+    "port": 4000,
+    "path": "/auth",
+    "auth": {
+      "users": {
+        "foo": "bar"
+      }
+    }
+  },
+  "credentials": {
+    "jambonz.org": [
+      {
+        "username": "john",
+        "password": "1234",
+        "expires": 300,
+        "call_hook": "http://127.0.0.1/call",
+        "call_status_hook": "http://127.0.0.1/call-status"
+      },
+      {
+        "username": "jane",
+        "password": "5678",
+        "expires": 45
+      }
+    ],
+    "sip.example.com": [
+      {
+        "username": "todd",
+        "password": "1234"
+      }
+    ]
+  }
+}
